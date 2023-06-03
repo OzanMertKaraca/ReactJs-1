@@ -1,5 +1,6 @@
 import React,{ Component } from 'react';
 import Cmp from   "./ilkcmpnt";
+import Cmp2 from "./ilkcmpnt2";
 import './App.css';
 import './newcss.css';
 
@@ -11,8 +12,9 @@ class App extends Component  {
         return (
             <div className="container">
                <h1> New Css</h1>
-              <Cmp />
-
+                <Cmp />
+                <br/>
+                <Cmp2 />
             </div>
 
         );
