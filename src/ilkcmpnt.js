@@ -5,7 +5,7 @@ class Cmp extends Component {
     {
         return(
         <div>
-            <h1>React Öğreniyorum</h1>
+            <h2>React Öğreniyorum</h2>
             <form action="">
                 <input type="text"/>
                 <button>Kaydet</button>
