@@ -1,6 +1,6 @@
 import React,{ Component } from 'react';
 import Cmp from   "./ilkcmpnt";
-import Cmp2 from "./ilkcmpnt2";
+/*import Cmp2 from "./ilkcmpnt2";*/
 import './App.css';
 import './newcss.css';
 
@@ -8,13 +8,13 @@ import './newcss.css';
 class App extends Component  {
     render()
     {
-
+        const tittle="React Courses";
+        const description="Yeni Başlangıçlar";
         return (
-            <div className="container">
-               <h1> New Css</h1>
-                <Cmp />
-                <br/>
-                <Cmp2 />
+            <div className="App">
+
+                <Cmp baslik={tittle} aciklama={description} />
+
             </div>
 
         );
