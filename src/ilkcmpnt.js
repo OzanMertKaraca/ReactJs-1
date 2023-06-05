@@ -3,6 +3,7 @@ import React,{Component} from 'react';
 class Cmp extends Component {
     render()
     {
+        //Props Name isimlendirilme ve yazdırılmada aynı olması gerekir.
         console.log(this.props)
         const{baslik,aciklama}=this.props;
         return(
