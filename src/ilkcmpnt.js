@@ -4,6 +4,7 @@ class Cmp extends Component {
     render()
     {
         console.log(this.props)
+        const{baslik,aciklama}=this.props;
         return(
         <div>
             <h1>{this.props.baslik}</h1>
@@ -13,6 +14,8 @@ class Cmp extends Component {
                 <input type="text"/>
                 <button>Kaydet</button>
             </form>
+            <h1>{baslik}</h1>
+            <p>{aciklama}</p>
         </div>
         );
     }
