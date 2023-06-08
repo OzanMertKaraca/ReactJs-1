@@ -9,18 +9,22 @@ class App extends Component  {
     {
         const dizim=[
             {
+                id:1,
                 title:"Mutluyum",
                 description:"Umutluyum"
             },
             {
+                id:2,
                 title: "Yeniden",
                 description: "Başlıyoruz"
             },
             {
+                id:3,
                 title: "Adım Adım",
                 description: "Sürekli İleri"
             },
             {
+                id:4,
                 title: "Vamos",
                 description: "Vamoss"
             }
@@ -29,7 +33,7 @@ class App extends Component  {
         return (
             <div className="App">
 
-           <Arakatman dizim={dizim} />
+           <Arakatman dizim={dizim} name={"Ozii"}/>
 
             </div>
 
