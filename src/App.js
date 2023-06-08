@@ -5,7 +5,7 @@ import './newcss.css';
 
 
 class App extends Component  {
-    render()
+    render( )
     {
         const dizim=[
             {
