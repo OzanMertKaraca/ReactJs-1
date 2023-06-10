@@ -1,13 +1,8 @@
 import React,{Component} from 'react';
 import Cmp from './ilkcmpnt.js';
 import PropTypes from 'prop-types';
-//PropTypes kullandığım componenetin türünü belirtirim
+//functional componentlerde Proptypes Kullanımı
 class Arakatman extends Component {
-    static propTypes=
-        {
-            dizim:PropTypes.array,
-            name:PropTypes.string,
-        }
     render()
     {
         console.log(this.props)
@@ -26,5 +21,9 @@ class Arakatman extends Component {
 }
 
 }
+Arakatman.propTypess =
+    {
+        name:PropTypes.string,
+    }
 export default Arakatman;
 
