@@ -33,7 +33,7 @@ class App extends Component  {
         return (
             <div className="App">
 
-           <Arakatman dizim={dizim} name="Ozii"/>
+           <Arakatman dizim={dizim} name="Ozii" />
 
             </div>
 

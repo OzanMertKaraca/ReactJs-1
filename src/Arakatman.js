@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import Cmp from './ilkcmpnt.js';
 import PropTypes from 'prop-types';
-//functional componentlerde Proptypes Kullanımı
+//
 class Arakatman extends Component {
     render()
     {
@@ -21,9 +21,15 @@ class Arakatman extends Component {
 }
 
 }
-Arakatman.propTypess =
+Arakatman.propTypes =
     {
-        name:PropTypes.string,
+        dizim:PropTypes.array.isRequired,
+        name:PropTypes.oneOfType(
+            [
+                    PropTypes.number,
+                    PropTypes.string,
+                  ]
+        ).isRequired
     }
 export default Arakatman;
 
