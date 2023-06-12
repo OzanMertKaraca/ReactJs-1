@@ -3,6 +3,10 @@ import Cmp from './ilkcmpnt.js';
 import PropTypes from 'prop-types';
 //
 class Arakatman extends Component {
+    static defaultProps =
+    {
+    name:"Ozan"
+     };
     render()
     {
         console.log(this.props)
