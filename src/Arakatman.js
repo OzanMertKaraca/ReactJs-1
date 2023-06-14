@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Cmp from './ilkcmpnt.js';
 import PropTypes from 'prop-types';
+import Form from './Form.js';
 //
 class Arakatman extends Component {
     constructor(props)
@@ -25,6 +26,7 @@ class Arakatman extends Component {
                 <Cmp key={dizim.id} baslik={dizim.title} aciklama={dizim.description} />
                 )
                 }
+                <Form/>
             </div>
         );
 }
