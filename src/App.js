@@ -2,9 +2,17 @@ import React,{ Component } from 'react';
 import Arakatman from './Arakatman';
 import './App.css';
 import './newcss.css';
-
+//Uygulama içerisinde herhangi bir alanda durumu değişebilen
+//değerleri tutan javascript objesidir.
 
 class App extends Component  {
+    constructor (props)
+    {
+        super(props);
+        this.state={
+            name:"State"
+        }
+    }
     render( )
     {
         const dizim=[
@@ -32,7 +40,7 @@ class App extends Component  {
 
         return (
             <div className="App">
-
+             <h1>{this.state.name}</h1>
            <Arakatman dizim={dizim} />
 
             </div>
