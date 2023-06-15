@@ -11,6 +11,15 @@ class App extends Component  {
     state = {
         name:"State"
     }
+    changeName()
+    {
+        console.log(this.state);
+        this.setState(
+            {
+                name:"Ozii"
+            }
+        )
+    }
     render( )
     {
         const dizim=[
@@ -39,7 +48,8 @@ class App extends Component  {
         return (
             <div className="App">
              <h1>{this.state.name}</h1>
-           <Arakatman dizim={dizim} />
+                {/* <Arakatman dizim={dizim} />*/}
+                <button onClick={this.changeName.bind(this)}>Değiştir</button>
 
             </div>
 

@@ -22,8 +22,8 @@ class Arakatman extends Component {
                     this.props.name
                 }
                 {
-                 this.props.dizim.map(dizim =>
-                <Cmp key={dizim.id} baslik={dizim.title} aciklama={dizim.description} />
+                    this.props.dizim.map(dizim =>
+                   <Cmp key={dizim.id} baslik={dizim.title} aciklama={dizim.description} />
                 )
                 }
                 <Form/>
