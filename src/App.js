@@ -3,6 +3,7 @@ import React,{ Component } from 'react';
 import Counter from './Counter.js';
 import './App.css';
 import './newcss.css';
+import Footer from "./Footer";
 
 
 
@@ -15,6 +16,7 @@ class App extends Component  {
             <div className="App">
 
                 <Counter />
+                <Footer />
 
             </div>
 
