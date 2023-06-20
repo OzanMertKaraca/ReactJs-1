@@ -1,26 +1,12 @@
-import React,{ Component } from 'react';
-//import Arakatman from './Arakatman';
-import Counter from './Counter.js';
-import './App.css';
-import './newcss.css';
-import Footer from "./Footer";
+import React from 'react';
 
+const App = () => {
 
-
-class App extends Component  {
-
-
-    render( )
-    {
-        return (
-            <div className="App">
-
-                <Counter />
-                <Footer />
-
-            </div>
-
-        );
-    }
+    return(
+        <div>
+             Meraba !!!
+        </div>
+    )
 }
+
 export default App;
