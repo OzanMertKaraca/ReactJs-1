@@ -1,6 +1,9 @@
 import React from 'react';
 
-const Comment = () => {
+const Comment = (props) => {
+    const {name ,comment,time,star} = props;
+   // const name = props.name;
+
     return (
         <div className="comment">
             {/*  <a className="avatar" href="/">  */}
@@ -8,16 +11,16 @@ const Comment = () => {
                      hata aldığımdan dolayı resimleri göstermeyecğim hatayı bakıyorum daha tam çözemedim çözünce döneceğim*/}
             {/*  </a> */}
             <div className="content">
-                <a className="author" href="/">Ozan Mert Karaca</a>
+                <a className="author" href="/">{name}</a>
                 <div className="metadata">
-                    <div className="date">2 days ago</div>
+                    <div className="date">{time} time ago</div>
                     <div className="rating">
                         <i className="star icon"></i>
-                        5 Star
+                        {star} Star
                     </div>
                 </div>
                 <div className="text">
-                    We are at the beginning...
+                    {comment}
                 </div>
             </div>
         </div>
