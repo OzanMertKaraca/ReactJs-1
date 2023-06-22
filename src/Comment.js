@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Comment = (props) => {
-    const {name ,comment,time,star} = props;
+const Comment = ({name ,comment,time,star}) => {
+   // const {name ,comment,time,star} = props;
    // const name = props.name;
 
     return (
