@@ -1,7 +1,6 @@
 .listarea
 {
-    width: 450px;
-    margin: 0 auto;
+   ;
 }
 input
 {
@@ -19,4 +18,19 @@ ul , li
     margin: 0;
     padding: 0;
     text-align: left;
+}
+.list li {
+    background-color: red;
+    padding: 20px;
+    font-weight: bolder;
+}
+.list li span{
+    display: block;
+}
+.list li span.name{
+    float: left;
+}
+.list li span.phone
+{
+    float: right;
 }
