@@ -6,7 +6,7 @@ class Contacts extends Component {
     render() {
         return(
             <div>
-                <List/>
+                <List contacts={this.props.contacts}/>
                 <Form/>
             </div>
         )
